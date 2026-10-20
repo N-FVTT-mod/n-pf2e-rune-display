@@ -1,0 +1,28 @@
+{
+  "NPFRD": {
+    "Labels": {
+      "ArmorRunes": "护甲符文"
+    },
+    "Settings": {
+      "ShowRuneTooltip": {
+        "Name": "悬停显示符文描述",
+        "Hint": "鼠标悬停在性能符文标签上时，显示对应符文石的描述。关闭后仍保留符文标签；描述索引与预加载逻辑不变。"
+      },
+      "ShowArmorRunesOnCharacterSheet": {
+        "Name": "在角色卡显示护甲符文",
+        "Hint": "在玩家角色卡侧边栏及 NPC 卡防护等级附近显示专用护甲符文区域；不影响物品卡和物品栏中的符文标签。"
+      },
+      "DistinguishWeaponArmorColors": {
+        "Name": "为武器和护甲的性能符文显示不同的颜色",
+        "Hint": "开启后，武器性能符文使用橙色，护甲性能符文使用蓝色；关闭后两者使用统一的暖灰褐色。"
+      }
+    },
+    "Promo": {
+      "Eyebrow": "N PF2E RUNE DISPLAY · 进阶符文管理",
+      "Title": "想进一步探索与自定义性能符文？",
+      "Point1": "N PF2E Runes Improve：自由检索武器与护甲性能符文列表。",
+      "Point2": "创建自定义性能符文，并配置专属规则效果。",
+      "Cta": "了解 Rune Improve →"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.npfrd-property-rune-tag {
+  display: inline-flex !important;
+  align-items: center;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  min-height: 1.4em;
+  padding-left: 0.42em !important;
+  padding-right: 0.42em !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  background: #514238 !important;
+  border-color: #a98a70 !important;
+  color: #fbf2e7 !important;
+}
+
+
+/* Mirror PF2E's native Immunities list: a .tags container holding individual
+   .tag.tag_secondary chips. Keep the compact native sizing and a clear white edge. */
+.npfrd-armor-rune-tags,
+.npfrd-npc-armor-rune-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 0.25rem !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+.npfrd-armor-rune-tags .npfrd-property-rune-tag,
+.npfrd-npc-armor-rune-tags .npfrd-property-rune-tag {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0.3em !important;
+  border: 1px solid #fff !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  line-height: normal !important;
+}
+
+/* Optional type colors: weapon = orange, armor = blue. The default is a warm neutral,
+   never the original green. */
+html.npfrd-distinguish-colors .npfrd-property-rune-tag--weapon {
+  background: #713b18 !important;
+  border-color: #e49a52 !important;
+  color: #fff3e6 !important;
+}
+html.npfrd-distinguish-colors .npfrd-property-rune-tag--armor {
+  background: #1e416c !important;
+  border-color: #72a8e6 !important;
+  color: #f0f7ff !important;
+}
+
+.pf2e.actor.character .npfrd-armor-rune-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pf2e.actor.character .npfrd-armor-rune-tags .npfrd-property-rune-tag {
+  min-width: 0 !important;
+  min-height: 1.5rem;
+  padding: 0.12rem 0.42rem !important;
+  line-height: 1.2;
+}
+
+#tooltip.npfrd-rune-tooltip {
+  max-width: 460px;
+  text-align: left;
+}
+
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-content {
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-title {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 1.05em;
+}
+
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-content > :last-child { margin-bottom: 0; }
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-usage { margin-top: 0.45rem; }
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-usage > strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.92em;
+  opacity: 0.82;
+}
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-usage > div { line-height: 1.45; }
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-divider {
+  margin: 0.5rem 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.48);
+}
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-description > :first-child { margin-top: 0; }
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-description > :last-child,
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-missing { margin-bottom: 0; }
+#tooltip.npfrd-rune-tooltip .npfrd-rune-tooltip-missing { opacity: 0.68; font-style: italic; }
+
+#settings-config .npfrd-lite-promo {
+  display: block;
+  margin: 0 0 15px;
+  padding: 17px 20px;
+  border: 2px solid #ffcf68;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #4b216c, #923b69 58%, #d27040);
+  box-shadow: 0 5px 18px #0006;
+  color: #fff9ec;
+  text-decoration: none;
+  cursor: pointer;
+}
+#settings-config .npfrd-lite-promo:hover,
+#settings-config .npfrd-lite-promo:focus-visible {
+  filter: brightness(1.15);
+  box-shadow: 0 7px 22px #0009, 0 0 0 2px #ffdf92;
+}
+#settings-config .npfrd-lite-promo__eyebrow { display: block; color: #ffdda4; font-weight: 800; letter-spacing: .06em; }
+#settings-config .npfrd-lite-promo__title { display: block; margin: 5px 0; font-size: 1.35rem; font-weight: 800; line-height: 1.25; }
+#settings-config .npfrd-lite-promo__point { display: block; margin: 7px 0; font-weight: 800; line-height: 1.45; }
+#settings-config .npfrd-lite-promo__cta { display: inline-block; padding: 7px 11px; border-radius: 6px; background: #ffe6a4; color: #51265e; font-weight: 800; }
+
+/* Keep the character/NPC armor chips white-bordered even when type colors are enabled. */
+html.npfrd-distinguish-colors .npfrd-armor-rune-tags .npfrd-property-rune-tag--armor,
+html.npfrd-distinguish-colors .npfrd-npc-armor-rune-tags .npfrd-property-rune-tag--armor {
+  border-color: #fff !important;
+}

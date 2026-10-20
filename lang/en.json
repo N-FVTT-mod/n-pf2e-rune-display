@@ -1,0 +1,28 @@
+{
+  "NPFRD": {
+    "Labels": {
+      "ArmorRunes": "Armor Runes"
+    },
+    "Settings": {
+      "ShowRuneTooltip": {
+        "Name": "Show rune descriptions on hover",
+        "Hint": "Show the matching runestone description when hovering over a property-rune tag. Rune indexing and eager preparation remain unchanged when disabled."
+      },
+      "ShowArmorRunesOnCharacterSheet": {
+        "Name": "Show armor runes on character sheets",
+        "Hint": "Show a dedicated armor-rune section on character sheets and near the NPC Armor Class field. Item-sheet and inventory tags are unaffected."
+      },
+      "DistinguishWeaponArmorColors": {
+        "Name": "Use different colors for weapon and armor property runes",
+        "Hint": "When enabled, weapon runes are orange and armor runes are blue. When disabled, both use the same warm neutral color."
+      }
+    },
+    "Promo": {
+      "Eyebrow": "N PF2E RUNE DISPLAY · ADVANCED RUNE TOOLS",
+      "Title": "Explore and customize property runes",
+      "Point1": "N PF2E Runes Improve provides searchable weapon and armor property-rune lists.",
+      "Point2": "Create custom property runes and configure their rule effects.",
+      "Cta": "Explore Rune Improve →"
+    }
+  }
+}

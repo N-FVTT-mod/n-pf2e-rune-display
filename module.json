@@ -1,0 +1,54 @@
+{
+  "id": "n-pf2e-rune-display",
+  "title": "N PF2E Rune Display",
+  "description": "A standalone PF2E module that displays weapon and armor property runes on item sheets, character sheets, and Strike chat messages, with optional descriptions on hover.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Minstrel N",
+      "url": "https://www.patreon.com/cw/Minstrel_N"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.369"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "8.0.0",
+          "verified": "8.6.0"
+        }
+      }
+    ],
+    "requires": [],
+    "recommends": [],
+    "conflicts": []
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/rune-display.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "zh-CN",
+      "name": "简体中文",
+      "path": "lang/zh-CN.json"
+    },
+    {
+      "lang": "cn",
+      "name": "中文（兼容）",
+      "path": "lang/cn.json"
+    }
+  ]
+}
